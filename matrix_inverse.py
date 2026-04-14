@@ -27,8 +27,8 @@ def matrix_inverse(matrix):
             if row != col:
                 factor = augmented[row][col]
                 augmented[row] = [
-                  augmented[row][i] - factor * augmented[col][i]
-                  for i in range(2 * n)
+                    augmented[row][i] - factor * augmented[col][i]
+                    for i in range(2 * n)
                 ]
 
     return [row[n:] for row in augmented]
